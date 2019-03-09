@@ -2,7 +2,6 @@ package com.scuticommerce.configservice.controller;
 
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.config.DynamicStringProperty;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -98,7 +97,8 @@ public class ConfigController {
         properties.put(messagingservicePort.getName(),messagingservicePort.get());
         properties.put(cacheserviceUrl.getName(),cacheserviceUrl.get());
         properties.put(cacheservicePort.getName(),cacheservicePort.get());
-        properties.put(searchserviceUrl.getName(),searchservicePort.get());
+        properties.put(searchserviceUrl.getName(),searchserviceUrl.get());
+        properties.put(searchservicePort.getName(),searchservicePort.get());
         properties.put(awsS3Key.getName(),awsS3Key.get());
         properties.put(awsS3Secret.getName(),awsS3Secret.get());
 
